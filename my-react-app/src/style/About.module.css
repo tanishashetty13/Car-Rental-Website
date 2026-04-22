@@ -1,0 +1,245 @@
+/* ---------- GENERAL RESET ---------- */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+.sectionTitle {
+  font-size: 2.75rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.sectionText {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4b5563;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* ---------- HERO SECTION ---------- */
+.heroSection {
+  text-align: center;
+  padding: 3rem 2rem 4rem;
+  background: linear-gradient(to right, #d1e3ff, #f0f4ff);
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.heroAnimation {
+  max-width: 420px;
+  margin: 0 auto 2rem;
+}
+
+.heroTitle {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  color: #374151;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- CARD GRID ---------- */
+.cardGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 2.5rem;
+}
+
+/* ---------- VALUE / FEATURE CARDS ---------- */
+.valueCard,
+.featureCard {
+  background: white;
+  padding: 1.75rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valueCard:hover,
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.valueEmoji,
+.featureEmoji {
+  font-size: 2.2rem;
+}
+
+.cardTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  color: #1f2937;
+}
+
+.cardText {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------- TEAM SECTION ---------- */
+.teamCard {
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+}
+
+.teamImage {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.teamInfo {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.teamName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.teamRole {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+
+.teamBio {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* ---------- TIMELINE ---------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 1.25rem;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  position: relative;
+  border-left: 3px solid #93c5fd;
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timelineItem::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.4rem;
+  left: -0.65rem;
+}
+
+.timelineYear {
+  font-weight: bold;
+  color: #1d4ed8;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.timelineText {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------- CTA SECTION ---------- */
+.ctaSection {
+  background-color: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  margin: 5rem auto 2rem;
+  max-width: 1000px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.ctaTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.ctaText {
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+  background-color: #ffffff;
+  color: #1e40af;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #e0e7ff;
+  transform: translateY(-2px);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.05rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .teamImage {
+    height: 220px;
+  }
+
+  .ctaSection {
+    padding: 3rem 1.5rem;
+  }
+}

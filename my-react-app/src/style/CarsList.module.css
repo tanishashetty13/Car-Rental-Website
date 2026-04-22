@@ -1,0 +1,48 @@
+/* CarsList.module.css */
+
+.controlsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;  /* Increased space between buttons */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .controlsContainer {
+    flex-direction: row;
+  }
+}
+
+.input,
+.select {
+  width: 280px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #f87171;
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.4);
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.arrowIcon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  pointer-events: none;
+  transform: translateY(-50%);
+  color: #f87171;
+}

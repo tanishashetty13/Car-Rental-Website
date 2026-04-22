@@ -1,0 +1,150 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9fafb, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 3.5rem 1.5rem;
+  color: #1f2937; /* Tailwind's gray-900 */
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.card {
+  flex: 1;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.cardTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+  color: #111827;
+}
+
+.image {
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.noImage {
+  width: 100%;
+  max-width: 500px;
+  height: 16rem;
+  background-color: #e5e7eb;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.carName {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1f2937;
+}
+
+.price {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #4b5563;
+  font-size: 1.125rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 1.5rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.3);
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.button {
+  width: 100%;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: white;
+  padding: 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  transform: scale(1.03);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.successMessage {
+  text-align: center;
+  color: #15803d;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.successTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
